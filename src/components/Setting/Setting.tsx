@@ -1,3 +1,5 @@
+import { CgArrowsExpandRight } from 'react-icons/cg'
+import { FiMinus, FiPlus } from 'react-icons/fi'
 import styles from './settings.module.scss'
 
 interface ISetting {
@@ -15,15 +17,15 @@ export const Setting = ({
 }: ISetting) => {
 	const btns = [
 		{
-			icon: '/public/double-arrow_1761657 1.svg',
+			icon: <CgArrowsExpandRight size={16} />,
 			onClick: handleMinimize,
 		},
 		{
-			icon: '/public/Vector (3).svg',
+			icon: <FiPlus size={16} />,
 			onClick: handleZoomPlus,
 		},
 		{
-			icon: '/public/Vector (4).svg',
+			icon: <FiMinus size={16} />,
 			onClick: handleZoomMinus,
 		},
 		{
@@ -51,13 +53,7 @@ export const Setting = ({
 						border: background ? '1px solid #484848' : '1px solid #ddd',
 					}}
 				>
-					{btn.icon.endsWith('.svg') ||
-					btn.icon.endsWith('.png') ||
-					btn.icon.endsWith('.jpg') ? (
-						<img src={btn.icon} alt='' />
-					) : (
-						<span>{btn.icon}</span>
-					)}
+					<span>{btn.icon}</span>
 				</button>
 			))}
 		</div>

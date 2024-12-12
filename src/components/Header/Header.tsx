@@ -1,4 +1,4 @@
-import { FaLightbulb, FaLock, FaPen, FaTimes, FaUser } from 'react-icons/fa'
+import { FaLightbulb, FaLock, FaPen, FaUser } from 'react-icons/fa'
 import { FiPlus } from 'react-icons/fi'
 import { useNavigate } from 'react-router-dom'
 import { INotepad } from '../../context/NotePadContext'
@@ -10,7 +10,7 @@ interface IHeader {
 	handleDeleteNotepad: (id: string) => void
 	setShowModal: (value: boolean) => void
 	setShowModalUrl: (value: boolean) => void
-	handleSpellings: (value: boolean) => void 
+	handleSpellings: (value: boolean) => void
 	background: boolean
 	handleToggleBackground: () => void
 }
@@ -65,7 +65,7 @@ export const Header = ({
 			className={styles.header}
 			style={{
 				background: background ? '#181818' : 'transparent',
-				border: background ? 'none' : '1px solid #D9D9D9',
+				borderBottom: background ? 'none' : '1px solid #D9D9D9',
 			}}
 		>
 			<div className={styles.left}>
@@ -80,7 +80,7 @@ export const Header = ({
 				))}
 				{currentNote && (
 					<button onClick={() => handleDeleteNotepad(currentNote.id)}>
-						<FaTimes size={16} />
+						Remove Ads
 					</button>
 				)}
 			</div>

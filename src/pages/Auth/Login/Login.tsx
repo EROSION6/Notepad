@@ -1,6 +1,8 @@
+import { useNavigate } from 'react-router-dom'
 import styles from './login.module.scss'
 
 export const Login = () => {
+	const navigation = useNavigate()
 	return (
 		<div className={styles.containerLogin}>
 			<div className={styles.login}>
@@ -18,7 +20,7 @@ export const Login = () => {
 					</div>
 					<div className={styles.groupBtn}>
 						<button>Login</button>
-						<button>Signup</button>
+						<button onClick={() => navigation('/register')}>Signup</button>
 					</div>
 				</form>
 			</div>

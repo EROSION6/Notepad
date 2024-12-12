@@ -4,7 +4,7 @@ import styles from './footer.module.scss'
 
 export const Footer = () => {
 	const { background } = useBackground()
-	const { notepad } = useNotepad()
+	const { content } = useNotepad()
 
 	const handleShareLink = () => {
 		const currentUrl = window.location.href
@@ -48,16 +48,8 @@ export const Footer = () => {
 				<button onClick={handleShareLink}>Share Link</button>
 			</div>
 			<div className={styles.bottom}>
-				<span>
-					Words:
-					{notepad.reduce(
-						(acc, note) => acc + note.content.trim().split(/\s+/).length,
-						0
-					)}
-				</span>
-				<span>
-					Chars: {notepad.reduce((acc, note) => acc + note.content.length, 0)}
-				</span>
+				<span>Words: {content.trim().split(/\s+/).length}</span>
+				<span>Chars: {content.length}</span>
 			</div>
 		</footer>
 	)
