@@ -70,13 +70,13 @@ const NotepadDetail = () => {
 					}}
 					spellCheck={spelling}
 				/>
-				<Setting
-					background={background}
-					handleZoomPlus={handleZoomPlus}
-					handleMinimize={handleMinimize}
-					handleZoomMinus={handleZoomMinus}
-				/>
 			</div>
+			<Setting
+				background={background}
+				handleZoomPlus={handleZoomPlus}
+				handleMinimize={handleMinimize}
+				handleZoomMinus={handleZoomMinus}
+			/>
 		</div>
 	)
 }
