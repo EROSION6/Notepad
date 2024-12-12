@@ -1,0 +1,53 @@
+.header {
+	width: 100%;
+	padding: 9px 15px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.left h2 {
+	color: rgb(201, 207, 210);
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 24px;
+	letter-spacing: 0%;
+	text-align: left;
+}
+
+.right {
+	display: flex;
+	gap: 34px;
+	align-items: center;
+}
+
+.right button {
+	border: none;
+	background-color: transparent;
+	color: #929ea4;
+	cursor: pointer;
+	padding: 2px 5px;
+}
+
+.label {
+	font-size: 16px;
+}
+
+.right button:nth-child(8) {
+	color: #fff;
+	font-weight: 700;
+	font-size: 11px;
+	padding: 5px 10px;
+	background: #d96edc;
+	border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+	.header {
+		.right button:nth-child(4),
+		.right button:nth-child(5),
+		.right button:nth-child(6),
+		.right button:nth-child(7) {
+			display: none;
+		}
+	}
+}
