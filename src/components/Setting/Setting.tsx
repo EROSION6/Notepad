@@ -2,9 +2,9 @@ import styles from './settings.module.scss'
 
 interface ISetting {
 	background: boolean
-	handleZoomPlus: (textarea: HTMLTextAreaElement) => void
-	handleMinimize: (textarea: HTMLTextAreaElement) => void
-	handleZoomMinus: (textarea: HTMLTextAreaElement) => void
+	handleZoomPlus: () => void
+	handleMinimize: () => void
+	handleZoomMinus: () => void
 }
 
 export const Setting = ({

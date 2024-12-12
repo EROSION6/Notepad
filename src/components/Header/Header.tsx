@@ -10,8 +10,7 @@ interface IHeader {
 	handleDeleteNotepad: (id: string) => void
 	setShowModal: (value: boolean) => void
 	setShowModalUrl: (value: boolean) => void
-	handleSpellings: (value: boolean) => void
-
+	handleSpellings: (value: boolean) => void // Ожидает аргумент boolean
 	background: boolean
 	handleToggleBackground: () => void
 }
@@ -46,7 +45,7 @@ export const Header = ({
 		},
 		{
 			label: 'SP',
-			onClick: handleSpellings,
+			onClick: () => handleSpellings(true),
 		},
 		{
 			label: 'MO',
@@ -54,7 +53,6 @@ export const Header = ({
 		},
 		{
 			icon: <FaLightbulb size={16} />,
-			label: '',
 			onClick: handleToggleBackground,
 		},
 	]
