@@ -10,7 +10,7 @@ interface IHeader {
 	handleDeleteNotepad: (id: string) => void
 	setShowModal: (value: boolean) => void
 	setShowModalUrl: (value: boolean) => void
-	handleSpellings: (value: boolean) => void // Ожидает аргумент boolean
+	handleSpellings: (value: boolean) => void 
 	background: boolean
 	handleToggleBackground: () => void
 }

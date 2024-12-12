@@ -26,3 +26,12 @@
 		z-index: 9999;
 	}
 }
+
+@media (max-width: 424px) {
+	.overflow {
+		padding: 20px;
+		.content {
+			min-width: 100%;
+		}
+	}
+}

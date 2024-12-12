@@ -43,11 +43,21 @@
 
 @media (max-width: 768px) {
 	.header {
-		.right button:nth-child(4),
-		.right button:nth-child(5),
-		.right button:nth-child(6),
-		.right button:nth-child(7) {
-			display: none;
+		.left {
+			h2 {
+				font-size: 14px;
+			}
+		}
+
+		.right {
+			gap: 5px;
+
+			button:nth-child(4),
+			button:nth-child(5),
+			button:nth-child(6),
+			button:nth-child(7) {
+				display: none;
+			}
 		}
 	}
 }
