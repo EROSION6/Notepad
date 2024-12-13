@@ -2,7 +2,6 @@
 	max-width: 1500px;
 	height: 80vh;
 	margin-top: 2rem; 
-	overflow: hidden;
 
 	display: flex;
 	flex-direction: column;
@@ -77,13 +76,11 @@
 
 @media (max-width: 768px) {
 	.block {
-		height: 65vh;
 		width: 100% !important;
 
 		.textarea {
-		height: 70%;
+		height: 60%;
 		overflow-y: scroll;
-		
 		}
 	}
 }
