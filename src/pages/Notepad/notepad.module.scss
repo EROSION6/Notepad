@@ -16,7 +16,7 @@
 	.textarea {
 		position: relative;
 		font-size: 15px;
-	    	height: 700.4px;
+	    	height: 62vh;
 		margin-bottom: 10px;
 
 		&::-webkit-scrollbar {
@@ -91,6 +91,7 @@
 		width: 100% !important;
 
 		.textarea {
+			height: 350px;
 			overflow: scroll;
 		}
 	}
