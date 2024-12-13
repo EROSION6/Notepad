@@ -9,6 +9,7 @@
     	background-color: white;
     	justify-content: flex-end;
 	z-index: 999999;
+	padding: 4px 0;
 
 	button {
 		color: inherit;
@@ -37,11 +38,5 @@
 			width: 15px;
 			height: 15px;
 		}
-	}
-}
-
-@media (max-width: 768px) {
-	.setting {
-		width: 100% !important;
 	}
 }
