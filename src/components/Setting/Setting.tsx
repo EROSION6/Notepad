@@ -43,7 +43,8 @@ export const Setting = ({
 	]
 
 	return (
-		<div className={styles.setting}>
+		<div className={styles.setting}
+		style={{background: background ? '#121212' : 'white'}}>
 			{btns.map((btn, index) => (
 				<button
 					key={index}
