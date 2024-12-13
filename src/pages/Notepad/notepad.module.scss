@@ -1,6 +1,6 @@
 .block {
 	max-width: 1500px;
-	height: 100vh;
+	height: 80vh;
 	margin-top: 2rem; 
 
 
@@ -87,6 +87,7 @@
 
 @media (max-width: 425px) {
 	.block {
+		height: 100vh;
 		width: 100% !important;
 
 		.textarea {
