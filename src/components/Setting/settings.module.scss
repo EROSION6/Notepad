@@ -5,6 +5,8 @@
 
 	display: flex;
 	gap: 6px;
+	background-color: white;
+	z-index: 999999;
 
 	button {
 		color: inherit;
