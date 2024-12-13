@@ -79,5 +79,9 @@
 @media (max-width: 768px) {
 	.block {
 		width: 100% !important;
+		
+		.textarea {
+			height: 540px;
+		}
 	}
 }
