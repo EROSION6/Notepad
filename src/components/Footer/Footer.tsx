@@ -36,6 +36,20 @@ export const Footer = () => {
 		}
 	}
 
+	
+	const handleCopyLink = () => {
+		const currentUrl = window.location.href
+		navigator.clipboard
+			.writeText(currentUrl)
+			.then(() => {
+				alert('Ссылка скопирована в буфер обмена!')
+			})
+			.catch(err => {
+				console.error('Ошибка при копировании ссылки: ', err)
+			})
+	}
+
+
 	return (
 		<footer
 			className={styles.footer}
@@ -44,7 +58,7 @@ export const Footer = () => {
 			}}
 		>
 			<div className={styles.top}>
-				<button>Editable Link</button>
+				<button onClick={handleCopyLink}>Editable Link</button>
 				<button onClick={handleShareLink}>Share Link</button>
 			</div>
 			<div className={styles.bottom}>
