@@ -14,9 +14,9 @@
 	}
 
 	.textarea {
+		position: relative;
 		font-size: 15px;
-		height: 642.4px;
-		overflow-y: scroll;
+	    	height: 585.4px;
 		margin-bottom: 10px;
 
 		&::-webkit-scrollbar {
@@ -79,9 +79,9 @@
 @media (max-width: 768px) {
 	.block {
 		width: 100% !important;
-		
+
 		.textarea {
-			height: auto;
+			height: 540px;
 		}
 	}
 }
